@@ -1,5 +1,10 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import css from './Header.module.css';
+import clsx from 'clsx';
+
+const buildLinkClass = ({ isActive }) => {
+  return clsx(css.link, isActive && css.active);
+};
 
 export const Header = () => {
   return (
@@ -8,14 +13,14 @@ export const Header = () => {
       <nav>
         <ul className={css.contUl}>
           <li>
-            <Link to="/" className={css.link}>
+            <NavLink to="/" className={buildLinkClass}>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" className={css.link}>
+            <NavLink to="/about" className={buildLinkClass}>
               About
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

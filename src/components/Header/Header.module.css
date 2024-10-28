@@ -14,3 +14,7 @@
 .link {
   color: white;
 }
+
+.active {
+  color: orange;
+}
