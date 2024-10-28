@@ -22,6 +22,11 @@ export const Header = () => {
               About
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/users" className={buildLinkClass}>
+              Users
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
