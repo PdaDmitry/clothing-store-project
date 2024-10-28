@@ -1,0 +1,16 @@
+.contRout {
+  display: flex;
+  background-color: rgb(47, 156, 47);
+  color: white;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.contUl {
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+  color: white;
+}
