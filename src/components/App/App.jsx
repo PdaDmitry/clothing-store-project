@@ -1,10 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
-import css from './App.module.css';
+// import css from './App.module.css';
 import { Header } from '../Header/Header';
 import { Home } from '../../Pages/Home/Home';
 import { About } from '../../Pages/About/About';
 import { NotFound } from '../../Pages/NotFound/NotFound';
 import { Users } from '../../Pages/Users/Users';
+import { UseDetails } from '../UserDetails/UserDetails';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/users/:id" element={<UseDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

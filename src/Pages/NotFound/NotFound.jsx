@@ -1,3 +1,5 @@
+import css from './NotFound.module.css';
+
 export const NotFound = () => {
-  return <h2>Not found 404</h2>;
+  return <p className={css.text}>Sorry, this page was not found...</p>;
 };
