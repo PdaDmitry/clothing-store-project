@@ -10,7 +10,7 @@ export const Users = () => {
       const getData = async () => {
         const data = await fetchUsers();
         setUsers(data);
-        // console.log(data);
+        console.log(data);
       };
       getData();
     } catch (error) {

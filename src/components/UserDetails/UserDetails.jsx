@@ -4,17 +4,17 @@ import { fetchUsersById } from '../../../api';
 
 export const UseDetails = () => {
   const params = useParams();
-  //   console.log(params);
+  console.log('params: ', params);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
     try {
-      const userParams = async () => {
+      const getParams = async () => {
         const data = await fetchUsersById(params.id);
         setUser(data);
         // console.log(data);
       };
-      userParams();
+      getParams();
     } catch (error) {
       console.log(error);
     }
